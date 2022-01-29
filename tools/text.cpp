@@ -19,6 +19,17 @@ int main() {
   
   stoi("10");   //10 string
   int('1' - '0'); //1 char
+  
+  s.push_back('0' + 1); // 48 + 1 = 49 ASCII変換'1'
+  string convert(long long x){ // 10進数を２進数の文字列に変換
+    string res;
+    while(x>0){
+      res.push_back('0'+(x%2));
+      x/=2;
+    }
+    reverse(res.begin(),res.end());
+    return res;
+  }
 
   cout <<  + 1 << endl;
 }
