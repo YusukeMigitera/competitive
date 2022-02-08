@@ -4,6 +4,7 @@ using namespace std;
 using Graph = vector<vector<int>>;
 
 // 深さ優先探索
+vector<bool> seen;
 void dfs(const Graph &G, int v) {
     seen[v] = true; // v 訪問済み
 
