@@ -14,10 +14,9 @@ int main()
     //rep(i, n) cin >> a[i];
     rep(i, n) a[i] = i;
 
-    //多次元配列
+    //多次元配列 2がN個
     vector<vector<int>> b(n, vector<int>(2));
-    //rep(i, n) cin >> b[i][0] >> b[i][1];
-    rep(i, n) b[i][0] = b[i][1] = i;
+    rep(i, n) cin >> b[i][0] >> b[i][1];
 
     sort(a.begin(), a.end());    //小さい順 0, 1, 2, 3
     reverse(a.begin(), a.end()); //逆順
