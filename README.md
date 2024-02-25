@@ -15,7 +15,7 @@ cd abc000/a
 nvim code.cpp
 
 # テスト
-g++ code.cpp
+g++ -std=c++11 code.cpp
 oj t -d tests
 
 # 提出
