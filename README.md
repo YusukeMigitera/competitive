@@ -3,14 +3,14 @@
 ## acc, oj
 
 ```sh
-# ログイン
+# ログイン acc session OKなら不要
 acc login
 oj login https://atcoder.jp
 
 # 準備
 cd atcoder
 acc new abc000
-cp ../template_atcoder.cpp ./abc000/a/code.cpp
+cp code.cpp ./abc000/a
 cd abc000/a
 nvim code.cpp
 
