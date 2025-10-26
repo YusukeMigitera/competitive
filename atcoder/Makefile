@@ -10,7 +10,7 @@ add:
 	cp code.cpp ./$(contest)/$(task)
 
 test:
-	cd $(contest)/$(task) && g++ -std=c++11 code.cpp
+	cd $(contest)/$(task) && g++ -std=c++20 code.cpp
 	cd $(contest)/$(task) && oj t -d tests
 
 submit:
