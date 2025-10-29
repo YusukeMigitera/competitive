@@ -5,9 +5,16 @@ init:
 	acc new $(contest)
 	cp code.cpp ./$(contest)/$(task)
 
-add:
-	cd $(contest)/$(task) && acc add
-	cp code.cpp ./$(contest)/$(task)
+addb:
+	cd $(contest)/a && acc add
+	cp code.cpp ./$(contest)/b
+
+addc:
+	cd $(contest)/b && acc add
+	cp code.cpp ./$(contest)/c
+
+edit:
+	nvim ./$(contest)/$(task)/code.cpp
 
 test:
 	cd $(contest)/$(task) && g++ -std=c++20 code.cpp
