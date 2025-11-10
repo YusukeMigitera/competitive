@@ -3,7 +3,7 @@ task := a
 
 init:
 	acc new $(contest)
-	cp code.cpp ./$(contest)/$(task)
+	cp code.cpp ./$(contest)/a
 
 addb:
 	cd $(contest)/a && acc add
